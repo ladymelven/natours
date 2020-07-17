@@ -1,0 +1,31 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for travel company",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss css/style.css -w",
+    "devserver": "reload",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass scss/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/style.comp.css css/icons.css",
+    "prefix:css": "postcss --use autoprefixer -o css/style.prefix.css css/style.concat.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.min.css --output-style compressed",
+    "build": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "browserslist": [
+    "last 5 versions",
+    ">.5%",
+    "IE 10"
+  ],
+  "author": "Melven",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1"
+  },
+  "dependencies": {}
+}
