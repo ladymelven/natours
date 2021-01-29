@@ -5,5 +5,5 @@ The website is almost pure CSS and HTML, with an exception of two popup modules.
 Mostly done according to instructor's design, though I did implement popups differently using Javascript, 
 used a simple flexbox grid instead of floats and added extra crossbrowser and mobile optimisation.
 
-Optimized for mobile and desktop devices, browser support and fallbacks provided up to IE11. Lighthouse performance metrics
+Optimized for mobile and desktop devices, browser support and fallbacks provided up to IE11.
 Demo page available at https://ladymelven.github.io/natours/
